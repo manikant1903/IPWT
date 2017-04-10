@@ -1,0 +1,143 @@
+<html>
+	<head>
+		<title>Validate fields</title>
+		<style>
+			form
+			{
+				margin: 0 auto;
+				width: 550px;
+			  /* To see the outline of the form */
+			  	padding: 1em;
+			  	border: 1px solid #CCC;
+			  	border-radius: 2em;
+			  	background-color: lightgreen;
+			}
+		</style>
+	</head>
+
+	<body bgcolor="gray">
+		<form name="myform" id="myform" onsubmit="return validate();">
+			<h1><center><u>Form Validation</u></center></h1>
+			<table>
+				<tr>
+					<td align="left">
+					<strong>Name:</strong>
+					</td>
+					<td position="absolute">
+					<input type="text" name="firstname" id="firstname" placeholder="First Name" />
+					<input type="text" name="lastname" id="lastname" placeholder="Last Name"><br>
+					</td>
+				</tr>
+				<tr>
+					<td position="absolute">
+						<strong>Gender:</strong>
+					</td>
+					<td position="absolute">
+						<input type="radio" name="gender[]" id="gndr" value="male"/>Male
+						<input type="radio" name="gender[]" id="gndr" value="female"/>Female<br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Registration No:</strong>
+					</td>
+					<td position="absolute">
+						<input type="text" name="registrationno" id="registrationno" placeholder="Registration No" maxlength="8"/><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>E-mail:</strong>
+					</td>
+					<td position="absolute">
+						<input type="text" name="email" id="email" placeholder="Your Valid email"/><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Password:</strong>
+					</td>
+					<td position="absolute">
+						<input type="password" name="password" id="password" placeholder="Password"/><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Re-enter Password:</strong>
+					</td>
+					<td position="absolute">
+						<input type="password" name="repassword" id="repassword" placeholder="Re-Enter Password"/><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Date of Birth:</strong>
+					</td>
+					<td position="absolute">
+						<input type="Date" name="bday" id="bday"/><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Age:</strong>
+					</td>
+					<td position="absolute">
+						<input type="number" name="age" id="age" min="18"/><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Phone No:</strong>
+					</td>
+					<td position="absolute">
+						<input type="tel" name="phoneno" id="phoneno" minlength="10" maxlength="10" /><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Select Background Color:</strong>
+					</td>
+					<td position="absolute">
+						<select name="color" id="color">
+							<option value="" >Select a color</option>
+							<option value="gray">gray</option>
+							<option value="maroon">maroon</option>
+							<option value="orange">orange</option>
+							<option value="white">white</option>
+						</select><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<strong>Favourite Subjects:</strong>
+					</td>
+					<td position="absolute">
+						<select name="subjects" id="subjects" multiple>
+							<option value="c">C</option>
+							<option value="cpp">C++</option>
+							<option value="java">Java</option>
+							<option value="python">Python</option>
+						</select><br>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<label for="hobbies"><strong>Hobbies:</strong></label>
+					</td>
+					<td position="absolute">
+						<input type="checkbox" name="hobbies" id="sports" value="sports"/>sports
+						<input type="checkbox" name="hobbies" id="movies" value="movies"/>movies
+						<input type="checkbox" name="hobbies" id="adventure" value="adventure"/>adventure<br>
+					</td>
+				</tr>
+				<tr>
+					<td align="right">
+						<input type="submit" value="submit"\>
+						<input type="reset" value="reset"\>
+					</td>
+				</tr>
+			</table>
+		</form>
+		<script src="form_validate_js.js"></script>
+	</body>
+</html>
